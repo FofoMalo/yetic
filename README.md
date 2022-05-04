@@ -15,7 +15,7 @@ year: 2022
 
 ## Set-up
 Envrionnement de travail :
-Configuer le set en local , à minima il vous faut disposer de : 
+Config utile en local , à minima il vous faut disposer de : 
 - PHP 8
 - Un serveur Apache2 installé sous Lamp 
 - Composer
@@ -36,4 +36,16 @@ Maintenant que notre projet a été bien installé nous allons créer notre base
 ```
 symfony console make:docker:database
 ```
-## 
+## Test unitaire 
+Pour lancer nos test unitaires saisir la commande suivante : 
+```
+php bin/phpunit --testdox
+```
+## Installer faker/factory
+Tout d'abord nous allons invoquer depuis composer le bundles des fixtures : 
+```
+composer require  orm-fixtures --dev
+composer require fakerphp/faker --dev
+```
+
+

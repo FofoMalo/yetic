@@ -42,8 +42,8 @@ class UserTest extends TestCase
    {
         $user = new User();
 
-        $this->assertEmpty ($user->getName()); 
-        $this->assertEmpty($user->getFirstname());
+        $this->assertEmpty ($user->getName() ); 
+        $this->assertEmpty($user->getFirstname() );
         $this->assertEmpty($user->getEmail() );
           
    }

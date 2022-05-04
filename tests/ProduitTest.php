@@ -44,7 +44,7 @@ class ProduitTest extends TestCase
                      ->setDescription('true')
                      ->setCreateAt($datetime)
                      ->setSlug('slug')
-        //             ->addCategorie($categorie)
+                   ->addRelation($categorie)
                      ->setUser($user);
                      
         $this -> assertFalse($produit->getName() ==='false');

@@ -49,5 +49,17 @@ Tout d'abord nous allons invoquer depuis composer le bundles des fixtures :
 composer require  orm-fixtures --dev
 composer require fakerphp/faker --dev
 ```
+## Install in local 
+Pour installer le projet en local il vous faut : 
+* 1 - Le Cloner sur sa machine locale
+```
+git clone https://github.com/FofoMalo/yetic
+```
+* 2 - Pour la Bdd disposer de Docker et de docker-compose
+* 3 - Lancer le server symfony : 
+```
+docker-compose -up d
+symfony serve -d
+```
 
 

@@ -1,0 +1,49 @@
+$primary:#020A1E;
+$secondary:#11FFB4;
+$success:#020A1E;
+$info:#11ffb4;
+$light:#020A1E;
+$text-color:$secondary;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background-color: rgba(2, 10, 30, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+
+&site-header a{
+  color: $secondary;
+  transition: color .15s ease-in-out;
+
+  &:hover {
+  color: #ffffff;
+  transition: color .15s ease-in-out;
+    }
+  }
+}
+
+.bg-dark {
+  color: $secondary;
+  background-color: $primary;
+}
+flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+.view {
+  height: 10vh;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+

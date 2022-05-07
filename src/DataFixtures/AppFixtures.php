@@ -20,7 +20,9 @@ class AppFixtures extends Fixture
                      ->setFirstname($faker->firstname())
                      ->setEmail($faker->email())
                      ->setRoles([])
+                     ->setSlug('slug')
                      ->setPassword($faker->password());
+                    
                     
             $manager->persist($user);
         }
@@ -29,7 +31,7 @@ class AppFixtures extends Fixture
             $categorie = new Categorie();
             $categorie->setName($faker->name())
                             ->setDescription($faker->word(3))
-                            ->setSlug('');
+                            ->setSlug('slug');
 
             $manager -> persist($categorie);
 

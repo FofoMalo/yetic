@@ -10,6 +10,8 @@ year: 2022
 * 3. [config](#configurer-son-projet)
 * 4. [creer la bdd](#créer-la-base-de-données)
 * 5. [test unitaires](#test-unitaire)
+* 6. [install faker](#installer-fakerfactory)
+* 7. [installer en local](#install-in-local)
 
 
 

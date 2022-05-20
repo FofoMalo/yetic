@@ -12,7 +12,6 @@ class ProduitCrudController extends AbstractCrudController
         return Produit::class;
     }
 
-    /*
     public function configureFields(string $pageName): iterable
     {
         return [
@@ -21,5 +20,4 @@ class ProduitCrudController extends AbstractCrudController
             TextEditorField::new('description'),
         ];
     }
-    */
 }

@@ -25,18 +25,20 @@ Config utile en local , à minima il vous faut disposer de :
 - Composer
 - Symfony-Cli
 - Docker et Docker-compose
+- Yarn ou npm 
+- Mon OS : Linux
 
 Et pour un versionning disposer d'un compte github.
 
 ## Configurer son projet 
-Une fois que nous avons aménager notre environnement de travail, nous allons installer un certains nombre d'outils utiles pour nos besoins futurs.
-taper la commande suivante pour s'assurer que notre envrionnement est prêt à recevoir notre projet et l'initialiser
-```bash ou pwsh
+Une fois que nous avons aménager notre environnement de travail, nous allons installer un certain nombre d'outils utile pour nos besoins futurs.
+taper la commande suivante pour s'assurer que notre environnement est prêt à recevoir notre projet et l'initialiser.
+```bash  
 symfony check:requirements
 symfony new yetic
 ```
 ## Créer la base de données 
-Maintenant que notre projet a été bien installé nous allons créer notre base de donnée et configurer son environnement.
+Maintenant que notre projet a été bien installé nous allons créer notre base de données et configurer son environnement. Vous aurez besoin au préalable d'installer Docker et Docker-compose sur votre OS avant d'accéder à la base de données. 
 ```
 symfony console make:docker:database
 ```
@@ -51,9 +53,10 @@ Tout d'abord nous allons invoquer depuis composer le bundles des fixtures :
 composer require  orm-fixtures --dev
 composer require fakerphp/faker --dev
 ```
-## Install in local 
+## Installer en local pour vos tests
 Pour installer le projet en local il vous faut : 
 * 1 - Le Cloner sur sa machine locale
+Depuis son terminal tapez la <code>command</code> :
 ```
 git clone https://github.com/FofoMalo/yetic
 ```
@@ -63,5 +66,7 @@ git clone https://github.com/FofoMalo/yetic
 docker-compose -up d
 symfony serve -d
 ```
+* 4 - Lancer Yarn  :<br>
+<code>yarn build</code> pour compiler nos assets.
 
 

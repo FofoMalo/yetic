@@ -1,7 +1,7 @@
 ---
 Project : Yetic
 owner: Florent Malo
-describre: Intégration test
+description: Intégration test
 year: 2022
 ---
 ## 1.<a name="Table of content" ></a> Tables of content
@@ -68,5 +68,3 @@ symfony serve -d
 ```
 * 4 - Lancer Yarn  :<br>
 <code>yarn build</code> pour compiler nos assets.
-
-

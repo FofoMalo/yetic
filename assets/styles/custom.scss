@@ -1,10 +1,12 @@
-$primary:#020A1E;
-$secondary:#11FFB4;
+$primary:#8792a2;
+$secondary:#d97917;
 $success:#020A1E;
 $info:#11ffb4;
 $light:#020A1E;
-$text-color:$secondary;
 
+:root {
+  --bs-dark: #020A1E;
+}
 * {
   box-sizing: border-box;
   margin: 0;

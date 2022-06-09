@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Controller\Admin;
-use App\Entity\Categorie;
-use App\Entity\Produit;
 use App\Entity\User;
 
 use App\Controller\HomeController;
@@ -20,7 +18,7 @@ class DashboardController extends AbstractDashboardController
     public function index(): Response
     {
         $routeBuilder = $this->container->get(AdminUrlGenerator::class);
-        $url = $routeBuilder->setController(UserController::class)-> $this->generateUrl();
+        $url = $routeBuilder->setController(UserCrudController::class)->generateUrl();
 
         return $this->redirect($url);
     
@@ -52,7 +50,7 @@ class DashboardController extends AbstractDashboardController
 
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
         yield MenuItem::linkToRoute('Back to the home', 'fas fa-list', HomeController::class);
-        yield MenuItem::linkToCrud('User', 'fas fa-list', 'fas fa-list', UserController::class );
+        yield MenuItem::linkToCrud('user', 'fas fa-comment', UserController::class);
 
 
     }
